@@ -1,0 +1,12 @@
+<template id="temple2">
+    <p>Ejemplo de template número 2</p>
+</template>
+
+<script>
+    // acedemos al nodo del docmeto que será importado
+    let nodeImportedDoc = document.currentScript.ownerDocument
+    // accedemos al template
+    let nodeTemplate = nodeImportedDoc.querySelector('#temple2')
+    // añadimos el template al DOM del documento que importe el compoente
+    document.body.appendChild(nodeTemplate.cloneNode(true))
+</script>

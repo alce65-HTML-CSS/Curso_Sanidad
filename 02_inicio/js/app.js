@@ -2,8 +2,14 @@ console.log('Iniciando JS desde un fichero')
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    let div = document.querySelector('#output')
+    let div1 = document.querySelector('#output1')
+    let div2 = document.querySelector('#output2')
+    
+    // para el primer componente
     let temp = document.querySelector('[rel="import"]').import
     .querySelector('template')
-    div.innerHTML = temp.innerHTML
+    div1.innerHTML = temp.innerHTML
+
+    // para el segundo componete
+    div2.innerHTML = document.querySelector('#temple2').innerHTML
 })

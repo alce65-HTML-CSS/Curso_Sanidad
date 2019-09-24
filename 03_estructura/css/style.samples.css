@@ -1,0 +1,164 @@
+
+:root {
+    --color-fondo:  bisque;
+    --color-texto-titulo:  rgb(161, 78, 78);
+}
+
+
+/* Uso de etiqueta como selectores*/
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+}
+
+body>header {
+    color: var(--color-fondo);
+    background-color: var(--color-texto-titulo);
+}
+
+body>header h1 {
+    margin: 0;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+nav {
+    padding: 1rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* p {
+    color: blue
+} */
+
+/* Uso de ids como selectores
+    Mala prectica */
+
+/* #p-intro {
+    color: crimson
+}  */
+
+/* Uso de clases como selectores
+    La opción más sencilla cuando es posible
+*/
+/*
+.intro {
+    color: crimson
+}
+
+.resaltado {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.subtitulo {
+    color: brown;
+    margin-top: 0rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+body p.definicion {
+    color: darkgreen;
+} 
+ */
+
+/* Selectores combinados */
+
+/* Selector de descendientes */
+header p {
+    margin-top: 0rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+/* Selector de hijos */
+
+body>footer {
+    color: var(--color-fondo);
+    background-color: var(--color-texto-titulo);
+    padding: 2rem;
+}
+
+body > footer p {
+    text-align: center;
+}
+
+/* Selectores de hermanos ~  y de hermanos adyacentes + */
+
+aside header~p {
+    color: darkgreen;
+}
+
+aside header+p {
+    color: crimson;
+}
+
+/* Ejemplo de selector con menor especificidad que los anteriores
+p {color:  blue}
+*/
+
+/* Pseudoclases y pseudoelementos */
+
+/* pseudoelementos */
+
+h1::first-letter {
+    font-size: 3rem;
+}
+
+.definicion::first-line {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* pseudoclases */
+h2:hover {
+    font-size: 2rem;
+}
+
+footer a:link {
+    color: darkcyan;
+}
+
+footer a:visited {
+    color: crimson;
+}
+
+.autor::before{
+    content: "© "
+}
+
+q {
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+}
+
+
+article p:nth-child(2) {
+    color: darkmagenta;
+}
+
+article p:nth-of-type(2) {
+    color: chocolate
+}
+
+
+section>ul li:nth-child(2n) {
+    background-color: goldenrod;
+}

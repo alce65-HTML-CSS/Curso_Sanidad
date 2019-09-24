@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curso Web - 03 Estructura</title>
+    <!-- Ejemplo de reset que no utilizamos 
+        <link rel="stylesheet" href="./css/reset.css"> -->
+    <!-- Ejemplos de selectores de css
+        <link rel="stylesheet" href="./css/style.samples.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./alien.favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/5ef5fc95aa.js" crossorigin="anonymous"></script>
@@ -25,92 +29,99 @@
              </ul>
          </nav>   
     </header>
-    
-    <p>Según el estandar HTML hay varios grupos de elementos</p>
-    <ul>
-        <li>Sectioning</li>
-        <li>Grouping</li>
-        <li>Text-level</li>
-    </ul>
-    <section id="sectioning">
-        <header>
-            <h2>Sectioning</h2>
-            <nav>
-                <ul>
-                    <li><a href="">section</a></li>
-                    <li><a href="">header</a></li>
-                    <li><a href="">footer</a></li>
-                    <li><a href="">nav</a></li>
-                    <li><a href="">article</a></li>
-                    <li><a href="">aside</a></li>
-                </ul>
-            </nav>
-        </header>
-        <p>Esto trata de elementos de seccionado.</p>
-        <p>Hasta HTML5 solo existian 2: body y los encabezados (h1-h6). Daban lugar al esquema implícito.</p>
-        <p>En HTML5 aparecen los elemento semánticos de sectioning</p>
+
+    <div class="container">
+        
+        <p id="p-intro" class="intro resaltado">Según el estandar HTML hay varios grupos de elementos</p>
         <ul>
-            <li>section</li>
-            <li>header</li>
-            <li>footer</li>
-            <li>nav</li>
-            <li>article</li>
-            <li>aside</li>
+            <li>Sectioning</li>
+            <li>Grouping</li>
+            <li>Text-level</li>
         </ul>
-        <p>Estos elementos permiten un seccionado explicito</p>
-        <h3>Section</h3>
-        <p>El elemento de HTML  (&lt;section&gt;) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</p>
-        <h3>Header</h3>
-        <p>El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.</p>
-        <h3>Footer</h3>
-        <p>El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section, blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>
-        <h3>Nav</h3>
-        <p>La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org).</p>
-        <h3>Article</h3>
-        <p>El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido</p>
-        <h3>Aside</h3>
-        <p>El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en contenido que está tangencialmente relacionado con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
-    </section>
-    
-    <section id="grouping">
-        <header>
-            <h2>Grouping</h2>
-        </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus, quos vero perspiciatis dicta voluptatem reprehenderit assumenda alias aut repellat eius, fuga, corporis sapiente tempore magnam fugit laborum excepturi maxime.</p>
-    </section>
+        <section id="sectioning">
+            <header>
+                <h2>Sectioning</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">section</a></li>
+                        <li><a href="">header</a></li>
+                        <li><a href="">footer</a></li>
+                        <li><a href="">nav</a></li>
+                        <li><a href="">article</a></li>
+                        <li><a href="">aside</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <p>Esto trata de elementos de seccionado.</p>
+            <p>Hasta HTML5 solo existian 2: body y los encabezados (h1-h6). Daban lugar al esquema implícito.</p>
+            <p>En HTML5 aparecen los elemento semánticos de sectioning</p>
+            <ul>
+                <li>section</li>
+                <li>header</li>
+                <li>footer</li>
+                <li>nav</li>
+                <li>article</li>
+                <li>aside</li>
+            </ul>
+            <p>Estos elementos permiten un seccionado explicito</p>
+            <h3>Section</h3>
+            <p class="definicion">El elemento de HTML  (&lt;section&gt;) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</p>
+            <h3>Header</h3>
+            <p class="definicion">El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.</p>
+            <h3>Footer</h3>
+            <p class="definicion">El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section, blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>
+            <h3>Nav</h3>
+            <p class="definicion">La MDN indica que <q>esta etiqueta crea un menú de navegación</q> (https://developer.mozilla.org).</p>
+            <h3>Article</h3>
+            <p class="definicion">El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido</p>
+            <h3>Aside</h3>
+            <p class="definicion">El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en contenido que está tangencialmente relacionado con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
+        </section>
+        
+        <section id="grouping">
+            <header>
+                <h2>Grouping</h2>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa natus, quos vero perspiciatis dicta voluptatem reprehenderit assumenda alias aut repellat eius, fuga, corporis sapiente tempore magnam fugit laborum excepturi maxime.</p>
+        </section>
 
-    <section id="text-level">
-        <header>
-            <h2>Text-level</h2>
-        </header>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, asperiores? Non quibusdam quod minima doloremque cumque. Delectus sunt amet dolor illo, tempora consequuntur aliquid voluptatibus ab sit laudantium nobis dolore.</p>    
-    </section>
+        <section id="text-level">
+            <header>
+                <h2>Text-level</h2>
+            </header>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, asperiores? Non quibusdam quod minima doloremque cumque. Delectus sunt amet dolor illo, tempora consequuntur aliquid voluptatibus ab sit laudantium nobis dolore.</p>    
+        </section>
 
-    <article>
-        <header>
-            <h2>Evolución del HTML</h2>
-        </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae hic reprehenderit magni tempora voluptatum alias minima quas aliquam unde distinctio corrupti natus perspiciatis molestiae in rem eius non, ducimus doloribus.</p>
-        <p>Beatae explicabo eveniet perferendis praesentium perspiciatis culpa velit rerum voluptates ea tenetur provident voluptate recusandae atque quidem enim commodi, sint soluta asperiores distinctio itaque? Dicta laudantium at eveniet maiores architecto.</p>
-        <p>Dolorem ex explicabo in molestiae, placeat, voluptatibus blanditiis, nemo suscipit doloribus ab eligendi aspernatur consequuntur temporibus iusto eveniet culpa saepe deserunt quod iste! Veritatis corrupti illo eum illum consectetur maxime.</p>
-        <p>Adipisci nemo voluptatum accusantium autem harum beatae tempora, rerum quasi ipsum quam, explicabo in, reprehenderit et quo sit pariatur corrupti sapiente dolor eos nulla officia velit molestiae aliquam eius? Error!</p>
-        <p>Aut debitis iste officia odit nostrum totam facere, quas rerum exercitationem? Itaque molestias qui nihil, reprehenderit similique velit quos mollitia recusandae magnam sed modi. Mollitia, quod? Fugit, laborum repellat! Dolor!</p>
-        <p>Incidunt voluptates id impedit nesciunt qui libero, temporibus error alias labore voluptatem repellat adipisci culpa natus tempore architecto dolorum aperiam? Minus incidunt consectetur quaerat doloribus corporis molestiae. Deserunt, repellendus repudiandae.</p>
-        <p>Alias quis nemo aliquid! Fugiat quos aspernatur tempore impedit asperiores beatae labore perspiciatis, eum, consectetur a suscipit ea dolorem saepe ipsa, nihil quod rerum autem adipisci iure harum earum delectus!</p>
-        <footer>
-            <p>&copy; Pepe Pérez</p>
-        </footer>
-    </article>
-    <aside>
-        <header>
-            <h2>Tim Berners-Lee</h2>
-        </header>
-        <p>Timothy "Tim" John Berners-Lee, KBE,1​ OM,1​ FRS,1​ FREng,1​ FRSA,1​ (Londres, Reino Unido, 8 de junio de 1955) es un científico de la computación británica, conocido por ser el padre de la World Wide Web. Estableció la primera comunicación entre un cliente y un servidor usando el protocolo HTTP en noviembre de 1989. En octubre de 1994 fundó el Consorcio de la World Wide Web (W3C) con sede en el MIT, para supervisar y estandarizar el desarrollo de las tecnologías sobre las que se fundamenta la Web y que permiten el funcionamiento de Internet.</p>
-        <p>Ante la necesidad de distribuir e intercambiar información acerca de sus investigaciones de una manera más efectiva, Berners-Lee desarrolló las ideas fundamentales que estructuran la web. Él y su grupo crearon lo que por sus siglas en inglés se denomina Lenguaje HTML (HyperText Markup Language) o lenguaje de etiquetas de hipertexto, el protocolo HTTP (HyperText Transfer Protocol) y el sistema de localización de objetos en la web URL (Uniform Resource Locator).   
-        </p>
-        <p>Es posible encontrar muchas de las ideas plasmadas por Berners-Lee en el proyecto Xanadú (que propuso Ted Nelson) y el memex (de Vannevar Bush).</p>
-    </aside>
+        <article>
+            <header>
+                <h2>Evolución del HTML</h2>
+            </header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae hic reprehenderit magni tempora voluptatum alias minima quas aliquam unde distinctio corrupti natus perspiciatis molestiae in rem eius non, ducimus doloribus.</p>
+            <p>Beatae explicabo eveniet perferendis praesentium perspiciatis culpa velit rerum voluptates ea tenetur provident voluptate recusandae atque quidem enim commodi, sint soluta asperiores distinctio itaque? Dicta laudantium at eveniet maiores architecto.</p>
+            <p>Dolorem ex explicabo in molestiae, placeat, voluptatibus blanditiis, nemo suscipit doloribus ab eligendi aspernatur consequuntur temporibus iusto eveniet culpa saepe deserunt quod iste! Veritatis corrupti illo eum illum consectetur maxime.</p>
+            <p>Adipisci nemo voluptatum accusantium autem harum beatae tempora, rerum quasi ipsum quam, explicabo in, reprehenderit et quo sit pariatur corrupti sapiente dolor eos nulla officia velit molestiae aliquam eius? Error!</p>
+            <p>Aut debitis iste officia odit nostrum totam facere, quas rerum exercitationem? Itaque molestias qui nihil, reprehenderit similique velit quos mollitia recusandae magnam sed modi. Mollitia, quod? Fugit, laborum repellat! Dolor!</p>
+            <p>Incidunt voluptates id impedit nesciunt qui libero, temporibus error alias labore voluptatem repellat adipisci culpa natus tempore architecto dolorum aperiam? Minus incidunt consectetur quaerat doloribus corporis molestiae. Deserunt, repellendus repudiandae.</p>
+            <p>Alias quis nemo aliquid! Fugiat quos aspernatur tempore impedit asperiores beatae labore perspiciatis, eum, consectetur a suscipit ea dolorem saepe ipsa, nihil quod rerum autem adipisci iure harum earum delectus!</p>
+            <footer>
+                <p class="autor">Pepe Pérez</p>
+            </footer>
+        </article>
+        <aside>
+            <header>
+                <h2>Tim Berners-Lee</h2>
+            </header>
+            <p>Timothy "Tim" John Berners-Lee, KBE,1​ OM,1​ FRS,1​ FREng,1​ FRSA,1​ (Londres, Reino Unido, 8 de junio de 1955) es un científico de la computación británica, conocido por ser el padre de la World Wide Web. Estableció la primera comunicación entre un cliente y un servidor usando el protocolo HTTP en noviembre de 1989. En octubre de 1994 fundó el Consorcio de la World Wide Web (W3C) con sede en el MIT, para supervisar y estandarizar el desarrollo de las tecnologías sobre las que se fundamenta la Web y que permiten el funcionamiento de Internet.</p>
+            <div>
+                <p>Ante la necesidad de distribuir e intercambiar información acerca de sus investigaciones de una manera más efectiva, Berners-Lee desarrolló las ideas fundamentales que estructuran la web. Él y su grupo crearon lo que por sus siglas en inglés se denomina Lenguaje HTML (HyperText Markup Language) o lenguaje de etiquetas de hipertexto, el protocolo HTTP (HyperText Transfer Protocol) y el sistema de localización de objetos en la web URL (Uniform Resource Locator).</p>
+            </div>
+            <p>Es posible encontrar muchas de las ideas plasmadas por Berners-Lee en el proyecto Xanadú (que propuso Ted Nelson) y el memex (de Vannevar Bush).</p>
+            <footer>
+                <p>Tomado de la <a href="https://es.wikipedia.org/wiki/Tim_Berners-Lee">Wikipedia</a></p>
+            </footer>
+        </aside>
     
+    </div>
     <footer>
         <p>Alejandro Cerezo &copy; CAS</p>
     </footer>
