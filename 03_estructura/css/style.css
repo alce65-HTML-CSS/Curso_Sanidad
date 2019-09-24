@@ -1,2 +1,11 @@
 body {background-color: bisque}
-h1 {color: brown}
+h1 {
+    color: brown;
+    margin-bottom: 0rem;
+}
+.subtitulo {
+    color: brown;
+    margin-top: 0rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
