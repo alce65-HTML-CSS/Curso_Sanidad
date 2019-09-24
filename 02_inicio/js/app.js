@@ -2,8 +2,8 @@ console.log('Iniciando JS desde un fichero')
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    let temp = document.querySelector('[rel="import"]')
+    let div = document.querySelector('#output')
+    let temp = document.querySelector('[rel="import"]').import
     .querySelector('template')
-    console.log(temp)
-
+    div.innerHTML = temp.innerHTML
 })
