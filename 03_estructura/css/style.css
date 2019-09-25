@@ -55,11 +55,9 @@ body>footer {
     color: var(--color-fondo);
     background-color: var(--color-texto-titulo);
     padding: 2rem;
-}
-
-body > footer p {
     text-align: center;
 }
+
 
 .container {
     margin-left: 2rem;
@@ -73,3 +71,37 @@ body > footer p {
 q {
     quotes: '\00AB' '\00BB' '\201E' '\201C';
 }
+
+/* pre {
+    font-family: inherit;
+} */
+
+blockquote footer {
+    border-top: 1px solid grey;
+    margin-top: 1rem;
+    padding-top: 0.5rem
+}
+
+.listas {
+    list-style-type: lower-roman;
+}
+.semana {
+    list-style-type: disc;
+}
+
+address a {
+    color: inherit;
+    /* text-decoration: none; */
+}
+
+footer p {
+    margin-bottom: 0.4rem;
+}
+
+/* strong {
+    font-weight: normal;
+} */
+
+/* em {
+    font-style: normal;
+} */
