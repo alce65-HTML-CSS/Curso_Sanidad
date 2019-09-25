@@ -105,3 +105,11 @@ footer p {
 /* em {
     font-style: normal;
 } */
+
+.ir-inicio {
+    display: block;
+    text-align: right;
+    font-size: 2rem;
+    color: var(--color-texto-titulo);
+    text-decoration: none;
+}

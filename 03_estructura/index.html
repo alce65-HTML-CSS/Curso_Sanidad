@@ -9,7 +9,7 @@
     <meta name="generator" content="VSC">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curso Web - 03 Estructura</title>
+    <title>Inicio | Curso Web</title>
     <!-- Ejemplo de reset que no utilizamos 
         <link rel="stylesheet" href="./css/reset.css"> -->
     <!-- Ejemplos de selectores de css
@@ -19,15 +19,16 @@
     <script src="https://kit.fontawesome.com/5ef5fc95aa.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="body">
     <header>
         <h1>Elementos de HTML5: <i class="fas fa-home"></i></h1>
         <p class="subtitulo">Clasificación segun el W3C</p>
         <nav>
             <ul>
-                <li><a href="">Sectioning</a></li>
-                <li><a href="">Grouping</a></li>
-                <li><a href="">Text-level</a></li>
+                <li><a href="#sectioning">Sectioning</a></li>
+                <li><a href="#grouping">Grouping</a></li>
+                <li><a href="#text-level">Text-level</a></li>
+                <li><a href="./mmedia.html">Multimedia</a></li>
             </ul>
         </nav>
     </header>
@@ -76,8 +77,9 @@
                         ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el
                         índice de contenido por niveles para navegar rápidamente por las distintas partes.</p>
                     <footer>
-                        <cite><a
-                                href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">developer.mozilla.org</a></cite>
+                        <cite><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section"
+                            target="_blank" rel="external">
+                                developer.mozilla.org</a></cite>
                     </footer>
                 </blockquote>
                 <h3>Header</h3>
@@ -118,6 +120,9 @@
                     barras laterales o como inserciones y contienen una explicación al margen como una definición de
                     glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en
                     aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
+                <footer>
+                    <a href="#body" class="ir-inicio" title="Inicio"><i class="fas fa-arrow-circle-up"></i></a>
+                </footer>
             </section>
 
             <section id="grouping">
@@ -170,6 +175,9 @@
                     <li>address</li>
                     <li>main</li>
                 </ul>
+                <footer>
+                    <a href="#body" class="ir-inicio" title="Inicio"><i class="fas fa-arrow-circle-up"></i></a>
+                </footer>
             </section>
 
             <section id="text-level">
@@ -177,6 +185,16 @@
                     <h2>Text-level</h2>
                 </header>
                 <p>Estos elementos parten con un display in-line, es decir que no son bloques.</p>
+                <h3>Hiperenlaces</h3>
+                <p>Son la del concepto de Web</p>
+                <p>El atributo obligatori href representa la URL de destino</p>
+                <p>Hay varios tipos de URL</p>
+                <ul>
+                    <li>Absolutas</li>
+                    <li>Relativas a origen</li>
+                    <li>Relativas a documento</li>
+                    <li>Internas</li>
+                </ul>
                 <h3>Elementos en linea neutros</h3>
                 <ul><li>span</li></ul>
                 <p>Ejemplo del uso en una palabra</p>
@@ -213,6 +231,12 @@
                     <li>time, e.g. día de la constitución de este año</li>
                     <li>mark marcado interactivo</li>
                 </ul>
+                <p>La etique time marca elementos de fecha y hora</p>
+                <p><time datatime="2019-12-25">Dia de Navidad de este año</time></p>
+                <p>La etiqieta mark <mark>destaca elementos</mark> de importancia contaxtual</p>
+                <footer>
+                    <a href="#body" class="ir-inicio" title="Inicio"><i class="fas fa-arrow-circle-up"></i></a>
+                </footer>
             </section>
 
             <article>
@@ -242,6 +266,7 @@
                     iure harum earum delectus!</p>
                 <footer>
                     <p class="autor">Pepe Pérez</p>
+                    <p><a href="#body" class="ir-inicio" title="Inicio"><i class="fas fa-arrow-circle-up"></i></a></p>
                 </footer>
             </article>
         </main>
@@ -267,6 +292,7 @@
                 Nelson) y el memex (de Vannevar Bush).</p>
             <footer>
                 <p>Tomado de la <a href="https://es.wikipedia.org/wiki/Tim_Berners-Lee">Wikipedia</a></p>
+                <p><a href="#body" class="ir-inicio" title="Inicio"><i class="fas fa-arrow-circle-up"></i></a></p>
             </footer>
         </aside>
     </div>
