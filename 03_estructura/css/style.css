@@ -4,6 +4,9 @@
     --color-texto-titulo:  rgb(161, 78, 78);
 }
 
+* {
+    box-sizing: border-box;
+}
 
 /* Uso de etiqueta como selectores*/
 
@@ -113,3 +116,14 @@ footer p {
     color: var(--color-texto-titulo);
     text-decoration: none;
 }
+
+.img-wrapper {
+    width: 49%;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+img {
+    max-width: 100%;
+}
+
