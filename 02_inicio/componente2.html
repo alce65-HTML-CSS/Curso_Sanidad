@@ -1,5 +1,5 @@
 <template id="temple2">
-    <p>Ejemplo de template número 2</p>
+    <p>Ejemplo de template número 2, que directamente exporta su template</p>
 </template>
 
 <script>
@@ -8,5 +8,6 @@
     // accedemos al template
     let nodeTemplate = nodeImportedDoc.querySelector('#temple2')
     // añadimos el template al DOM del documento que importe el compoente
+    
     document.body.appendChild(nodeTemplate.cloneNode(true))
 </script>
