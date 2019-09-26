@@ -118,12 +118,21 @@ footer p {
 }
 
 .img-wrapper {
-    width: 49%;
+    width: 50%;
     display: inline-block;
     margin-left: -4px;
+    padding-right: 1rem;
 }
 
-img {
+ video, img {
     max-width: 100%;
 }
 
+iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+.nav-graf {
+    width: 50%;
+}

@@ -29,6 +29,7 @@
                 <li><a href="./index.html#grouping">Grouping</a></li>
                 <li><a href="./index.html#text-level">Text-level</a></li>
                 <li><a href="#">Multimedia</a></li>
+                <li><a href="./datos.html">Datos</a></li>
             </ul>
         </nav>
     </header>
@@ -65,8 +66,7 @@
                     </li>
                     <li>Elementos de navegación gráficos</li>
                 </ul>
-                <h3>Imágenes</h3>
-                
+                <h3>Imágenes</h3>     
                 <div class="img-wrapper">
                     <p>Ejemplo de jpg</p>
                     <img src="./assets/komodo.jpg" alt="Dragón o varano de Komodo mostrando su lengua bífida">
@@ -92,9 +92,39 @@
                     <img src="./assets/tropical-sunrise.webp" alt="Amanecer tropical">
                 </div>
                 <div class="img-wrapper">
-                    <p>Ejemplo de ..,</p>
-                    <img src="" alt="">
+                    <p>Ejemplo de SVG</p>                    
+                    <img src="./assets/logo.svg" alt="Logotipo">
                 </div>
+                <p>Existen contenedores específicos de imágenes</p>
+                <figure class="img-wrapper">
+                    <figcaption>Barcas en el mar</figcaption>
+                    <img src="./assets/3boats.webp" alt="">
+                </figure>
+                <h3>Video y audio</h3>
+                <p>Podemos usar elementos MMedia directamente en nuestra Web</p>
+                <video controls>
+                    <source src="./assets/Ghost_in_the_Shell_Opening.webm" 
+                        type="video/webm">
+                    <source src="./assets/Ghost_in_the_Shell_Opening.mp4" 
+                        type="video/mp4">
+                </video>
+                <audio src="http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3"
+                    controls></audio>
+                <p>Ademas podemos basarnos en otra Web
+                     que gestione el MMedia: YouTube</p>
+                <p>Usaremos la etiqueta iframe</p>
+                <div class="img-wrapper">
+                    <iframe src="https://www.bbva.es/particulares/index.jsp"></iframe>
+                </div>
+                <div class="img-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1JLUn2DFW4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe> 
+                </div>
+                <h3>Elementos de navegación gráficos</h3>
+                <p>Podemos hacer otro uso de los SVG</p>
+                <embed class="nav-graf" src="./assets/logo.svg" type="image/svg+xml">
+                <footer>
+                    <a href="#body" class="ir-inicio" title="Inicio"><i class="fas fa-arrow-circle-up"></i></a>
+                </footer>           
         </section>
         </main>
         <aside>
