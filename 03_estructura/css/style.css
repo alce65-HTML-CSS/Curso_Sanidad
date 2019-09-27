@@ -150,3 +150,32 @@ iframe {
 .nav-graf {
     width: 50%;
 }
+
+.form-control {
+    padding: 1rem 0;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select {
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid gray;
+    width: 100%;    
+}
+
+.form-control input {
+    line-height: 2rem;
+}
+
+.botones {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.botones button {
+    color: var(--color-fondo);
+    background-color: var(--color-texto-titulo);
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
