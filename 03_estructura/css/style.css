@@ -65,6 +65,14 @@ nav a {
     color: chocolate;
 }
 
+.full-menu {
+    display: none;
+}
+
+.icon-menu-wrapper {
+    text-align: center;
+    font-size: 3rem;
+}
 
 /* Selector de hijos */
 
@@ -190,4 +198,39 @@ td {
 
 tr:nth-child(2n) {
     background-color: coral;
+}
+
+@media screen and (min-width: 960px) {
+    .container {
+        display: flex;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    .full-menu {
+        display: initial;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+  
+    .footer-menu {
+        display: none;
+    }
+
+    nav a {
+        transition: all 1s
+    }
+
+    nav a:hover {
+        transform: scale(1.4);
+        font-weight: bolder;
+    }
 }
