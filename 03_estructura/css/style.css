@@ -1,21 +1,10 @@
 
-:root {
-    --color-fondo:  bisque;
-    --color-texto-titulo:  rgba(148, 51, 51);
-}
-
-* {
-    box-sizing: border-box;
-}
-
 /* Uso de etiqueta como selectores*/
 
 body {
-    margin: 0;
     background-color: var(--color-fondo);
     background-image: url(../assets/fondo.png);
     font-family: 'Be Vietnam', Arial, sans-serif;
-
 }
 
 body>header {
@@ -71,25 +60,9 @@ header p {
 
 }
 
-nav {
-    padding: 1rem;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav li {
-    display: inline-block;
-}
 
 nav a {
-    display: block;
-    padding: 1rem;
     color: chocolate;
-    text-decoration: none;
 }
 
 
