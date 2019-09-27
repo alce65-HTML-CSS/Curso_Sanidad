@@ -74,19 +74,19 @@
                         </div>
                         <div class="form-control">
                             <label for="email">Correo</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>             
                         <div class="form-control">
                                 <label for="passw">Contraseña</label>
-                                <input type="password" name="passw" id="passw">
+                                <input type="password" name="passw" id="passw" required>
                             </div> 
                         <div class="form-control">
                             <label for="nacim">Fecha de nacimiento</label>
                             <input type="date" name="nacim" id="nacim">
                         </div> 
                         <div class="form-control">
-                            <label for="..">Elige tu número, del 1 al 10</label>
-                            <input type="number" name=".." id=".." min="1" max="10">
+                            <label for="num">Elige tu número, del 1 al 10</label>
+                            <input type="number" name="num" id="num" min="1" max="10">
                         </div>
                         <div class="form-control">
                             <label for="info">Más información</label>
@@ -97,15 +97,15 @@
                         <legend>Condiciones</legend>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quis minus optio ipsum pariatur dolorem ullam asperiores eos, doloremque animi? Obcaecati, nesciunt odit. Veritatis molestias ullam animi labore ut expedita?</p>
                         <div>
-                            <input type="checkbox" name="" id="">
-                            <label for="">He leido y acepto las condiciones</label>
+                            <input type="checkbox" name="condi" id="condi" required>
+                            <label for="condi">He leido y acepto las condiciones</label>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Datos del curso</legend>
                         <div class="form-control">
                             <label for="curso">Curso</label>
-                            <select name="curso" id="curso">
+                            <select name="curso" id="curso" required>
                                     <option value=""></option>
                                 <optgroup label="Front">
                                     <option value="HT">HTML5 y Pug</option>
@@ -120,7 +120,7 @@
                         </div>
                         <div>
                             <p>Sede del curso</p>
-                            <input type="radio" name="sede" id="mad" value="M">
+                            <input type="radio" name="sede" id="mad" value="M" required>
                             <label for="mad">Madrid</label>
                             <input type="radio" name="sede" id="bar" value="B">
                             <label for="bar">Barcelona</label>
@@ -134,10 +134,26 @@
                     </div>
                 </form>
 
-                
-                
-               
+                <h3>Tablas</h3>
 
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>2018</th>
+                        <th>2019</th>
+                    </tr>
+                    <tr>
+                        <th>Ingresos</th>
+                        <td>1.567.345€</td>
+                        <td>2.454.556€</td>
+                    </tr>
+                    <tr>
+                        <th>Gastos</th>
+                        <td>2.454.556€</td>
+                        <td>1.567.345€</td>
+                    </tr>
+
+                </table>
 
                 <footer>
                     <a href="#body" class="ir-inicio" title="Inicio"><i class="fas fa-arrow-circle-up"></i></a>
